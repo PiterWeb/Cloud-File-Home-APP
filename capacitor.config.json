@@ -1,0 +1,16 @@
+{
+  "appId": "com.svelte.capacitor",
+  "appName": "File Home Cloud",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "public",
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 0
+    }
+  },
+  "cordova": {},
+  "server": {
+      "cleartext": true
+  }
+}
