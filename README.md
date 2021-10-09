@@ -6,19 +6,23 @@ You can get the APP on [releases](https://github.com/PiterWeb/Cloud-File-Home-AP
 
 ## Preview
  
- ![](/screenshots/CFH-sc1.PNG?raw=true)
- ![](/screenshots/CFH-sc2.PNG?raw=true)
- ![](/screenshots/CFH-sc3.PNG?raw=true)
+ ![](/screenshots/CFH-sc1.PNG)
+ ![](/screenshots/CFH-sc2.PNG)
+ ![](/screenshots/CFH-sc3.PNG)
  
 ## Dev 
 
 *Need node installed*
+
+npm install
 
 Development command : npm run dev:start
 
 ## Build
 
 *First you need to have android sdks and Android Studio*
+
+npm install
 
 Build command : npm run build:android
 
