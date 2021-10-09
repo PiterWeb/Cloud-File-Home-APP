@@ -145,7 +145,7 @@
         </div>
 
         {:catch error}
-            <p class="title is-5">An error occurred during the connection!</p>
+            <p class="title is-5">An error occurred during the connection! {error}</p>
         {/await}
 
     </div>
