@@ -1,4 +1,5 @@
-![](IcoCloudFileHome.png) # Cloud-File-Home-APP
+![](IcoCloudFileHome.png) 
+# Cloud-File-Home-APP
  
  Simple [Svelte](https://svelte.dev/) + [Capacitor](https://capacitorjs.com/) APP made with this [template](https://github.com/drannex42/svelte-capacitor) which connects to [Cloud-File-Home Server](https://github.com/PiterWeb/Cloud-File-Home-Server) like a client
  
