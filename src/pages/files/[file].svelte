@@ -2,7 +2,7 @@
 
   import { Share } from '@capacitor/share';
 
-  import { params } from "@roxi/routify";
+  import { params , goto } from "@roxi/routify";
 
   var fileName = $params.file;
 
@@ -23,7 +23,21 @@
     dialogTitle: 'Share files in your local network',
     });
 
-  })
+  });
+
+  const deleteFile = (async () => {
+    
+    const response = await fetch(url + '/delete', {
+      method: 'POST',
+    });
+
+    const data = await response.json();
+
+    if (data.status === 200) {
+      return $goto('/files');
+    }
+
+  });
 
 </script>
 
@@ -97,11 +111,13 @@
         <a target="_blank"  href={url + '/download'} style="text-decoration:none;"><button class="button is-black" style="margin-top:5%">Download</button></a>
 
         <button style="margin-top:5%" class="button is-black" on:click={shareFile}>Share</button>
+
+        <button style="margin-top:5%" class="button is-black" on:click={deleteFile}>Delete</button>
         
       </div>
   </div>
 {:catch error}
-  <p>An error occurred!</p>
+  <p>An error occurred! : {error}</p>
 {/await}
 
 </div>

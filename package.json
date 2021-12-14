@@ -43,6 +43,7 @@
     "@capacitor/cli": "^3.0.0",
     "@capacitor/core": "^3.0.0",
     "@capacitor/ios": "^3.0.1",
-    "@capacitor/share": "^1.0.4"
+    "@capacitor/share": "^1.0.4",
+    "@capacitor/storage": "^1.2.3"
   }
 }

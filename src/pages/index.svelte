@@ -11,7 +11,7 @@
         ip.set(newIP);
         port.set(newPort);
 
-        $goto('./files')
+        $goto('./files');
 
     }
 
